@@ -1,11 +1,11 @@
-# TV tower of Berlin.
+# Elastic Fernsehturm.
 Simple demonstration of damped Hamiltonian elastodynamics with FEniCS.
 
 Author: Dirk Peschka
 
 ## What does this code do?
 
-1. Creation of a simplified two-dimensional representation of the Berlin TV tower as a finite element mesh.
+1. Creation of a simplified two-dimensional representation of the Berlin Fernsehturm tower as a finite element mesh.
 2. Somewhat compact representation of a structure-preserving damped-Hamiltonian system of elastodynamics.
 3. Solve and visualize the solution using the finite element library FEniCS (legacy version 2019.1.0)
 
