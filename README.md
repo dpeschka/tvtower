@@ -27,4 +27,23 @@ $$
 b(\eta,v)=\langle \mathrm{D}\mathcal{H}(q),v\rangle
 $$
 
-where the Frechet derivative in FEniCS is conveniently obtained via `derivative(H,q,dq)`.
+where the Frechet derivative in FEniCS is conveniently obtained via `derivative(H,q,dq)`. In the actual implementation we use the displacement $w(x)$ instead of the deformation $\chi(x):=x+w(x)$. Then the elastodynamic problem is solved via
+
+$$
+a(\eta,\xi) - b(\xi,\partial_t q)=0,
+$$
+
+where $a(\eta,xi)=j(\eta,\xi)-k(\eta,\xi)$ consists of a skew-symmetric contribution $j$ that covers reversible (Hamiltonian) dynamics and a symmetric positive contribution $k$ that covers irreversible (Onsager) dynamics. We use 
+
+$$
+j(\eta,\xi)=\int_\Omega \eta_p\cdot\xi_\chi - \xi_p\cdot\eta_\chi\,\mathrm{d}x,
+$$
+
+and
+
+$$
+k(\eta,\xi)=\int_\Omega \mu\nabla\eta_p\cdot\nabla \xi_p \,\mathrm{d}x.
+$$
+
+We discretize via P2 FEM for all function and a Crank-Nicolson scheme in time.
+
