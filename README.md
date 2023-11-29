@@ -15,4 +15,4 @@ Simple demonstration of damped Hamiltonian elastodynamics with FEniCS.
 
 ## Short explanation of discretization
 
-The starting point of this discretization is a formulation of elastodynamics using momentum $p$ and deformation $\chi$.
+The starting point of this discretization is a formulation of elastodynamics using momentum $p:\Omega\to\mathbb{R}^d$ and deformation $\chi:\Omega\to\mathbb{R}^d$, where $\Omega\subset\mathbb{R}^d$ has the shape of the TV tower and $d=2$. We put these functions into a composite vector $q=(\chi,p)$ that depends on time, i.e. $q=q(t)$ for $0\le t\le T$ with initial data $q_0=q(t=0)$. 
