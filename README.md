@@ -1,6 +1,8 @@
 # TV tower of Berlin.
 Simple demonstration of damped Hamiltonian elastodynamics with FEniCS.
 
+Author: Dirk Peschka
+
 ## What does this code do?
 
 1. Creation of a simplified two-dimensional representation of the Berlin TV tower as a finite element mesh.
