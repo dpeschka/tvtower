@@ -3,7 +3,7 @@ Demonstration of damped Hamiltonian elastodynamics with [FEniCS](https://fenicsp
 
 <img src="tvtower.gif" width="50%" alt="Animated TV tower from elastic Fernsehturm code">
 
-This is a very simple demonstration of research for more complex nonlinearly coupled mechanical problems that involve nonlinear viscoelasticity, diffusion and phase separation, reactions and phase transitions, see e.g. [[Schmeller and Peschka, SIAP 2023]](https://doi.org/10.1137/22M148478X) or [Peschka,Zafferi,[Heltai](https://github.com/luca-heltai),Thomas,JNET 2022](https://doi.org/10.1515/jnet-2021-0081).
+This is a very simple demonstration of research for more complex nonlinearly coupled mechanical problems that involve nonlinear viscoelasticity, diffusion and phase separation, reactions and phase transitions, see e.g. [[Schmeller and Peschka, SIAP 2023]](https://doi.org/10.1137/22M148478X) or [Peschka,Zafferi,Heltai,Thomas,JNET 2022](https://doi.org/10.1515/jnet-2021-0081).
 
 Author: Dirk Peschka
 
