@@ -67,7 +67,7 @@ $$
 k(\eta,\xi):=\int_\Omega \mu\nabla\eta_p\cdot\nabla \xi_p\hskip{2mm}\mathrm{d}x.
 $$
 
-We discretize via P2 FEM for all function and a Crank-Nicolson scheme in time.
+We discretize via P2 FEM for all function and a Crank-Nicolson scheme in time (except for the viscosity, which is solved fully implict).
 
 ## Core part of discretization
 
