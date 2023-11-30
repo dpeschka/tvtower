@@ -1,6 +1,8 @@
 # Elastic Fernsehturm.
 Simple demonstration of damped Hamiltonian elastodynamics with FEniCS.
 
+[Animated TV tower from elastic Fernsehrturm code](tvtovwer.gif)
+
 Author: Dirk Peschka
 
 ## What does this code do?
