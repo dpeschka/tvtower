@@ -1,4 +1,4 @@
-# Elastic Fernsehturm.
+# Elastic Berliner Fernsehturm.
 Demonstration of damped Hamiltonian elastodynamics with [FEniCS](https://fenicsproject.org).
 
 <img src="tvtower.gif" width="50%" alt="Animated TV tower from elastic Fernsehturm code">
