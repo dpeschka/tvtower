@@ -1,5 +1,5 @@
 # Elastic Fernsehturm.
-Simple demonstration of damped Hamiltonian elastodynamics with FEniCS.
+Simple demonstration of damped Hamiltonian elastodynamics with [FEniCS](https://fenicsproject.org).
 
 <img src="tvtower.gif" width="50%" alt="Animated TV tower from elastic Fernsehturm code">
 
@@ -14,7 +14,7 @@ Author: Dirk Peschka
 ## What do you need to run this code?
 
 - Python
-- FEniCS legacy 2019.1.0 with mshr
+- [FEniCS](https://fenicsproject.org) legacy 2019.1.0 with mshr
 - Matplotlib
 
 ## Short mathematical explanation of problem
