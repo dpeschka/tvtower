@@ -16,7 +16,7 @@ Creation of a two-dimensional representation of the Berlin Fernsehturm tower as 
 1. Compact representation of a structure-preserving damped-Hamiltonian system of elastodynamics.
 2. Solve and visualize the solution using the finite element library FEniCS (legacy version 2019.1.0)
 
-It creates a plot of kinetic, potential and total energy as a function of time and creates output in `./output`. The output can be read with standard finite element visualization software such as [ParaView](https://www.paraview.org) of [visIt](https://visit-dav.github.io/visit-website/index.html).
+It creates a plot of kinetic, potential and total energy as a function of time and creates output in `./output`. The output can be read with standard finite element visualization software such as [ParaView](https://www.paraview.org) or [visIt](https://visit-dav.github.io/visit-website/index.html).
 
 ### `tvmesh.xml`
 
