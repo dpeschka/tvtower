@@ -24,6 +24,8 @@ It creates a plot of kinetic, potential and total energy as a function of time a
 
 Clone of the Fernsehturm mesh created by `tvmesh.py`.
 
+<img src="tvtower_mesh.png" width="20%" alt="TV tower mesh for elastic Fernsehturm code">
+
 
 ## What do you need to run this example (properly)?
 
