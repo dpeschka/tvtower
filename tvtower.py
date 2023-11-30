@@ -76,7 +76,6 @@ def evolve(old_q, dt):
     E_kin = assemble(e_kinetic*dx)
     E_pot = assemble(e_potential*dx)
     return q,E_kin,E_pot
-    return q
 
 # Evolve solution t -> t + dt
 t = 0
@@ -92,10 +91,9 @@ for i in range(n_steps+1):
     energies.append([i,t,E_kin,E_pot,E_kin+E_pot])
 
 E = list(zip(*energies))
-t = E[1]
-plt.plot(t, E[2], label="E_kin")
-plt.plot(t, E[3], label="E_pot")
-plt.plot(t, E[4], label="E_tot")
+plt.plot(E[1], E[2], label="E_kin")
+plt.plot(E[1], E[3], label="E_pot")
+plt.plot(E[1], E[4], label="E_tot")
 plt.legend(loc="upper right")
 plt.xlabel("time")
 plt.ylabel("energy")
