@@ -51,3 +51,35 @@ $$
 
 We discretize via P2 FEM for all function and a Crank-Nicolson scheme in time.
 
+## Core part of algorithm
+
+```python
+# Solve single time step
+def evolve(old_q, dt):
+    # unknowns, test functions and previous time step
+    q,dq = Function(W),TestFunction(W)
+    fw,fp,w,p                  = split(q)
+    dfw,dfp,dw,dp              = split(dq)
+    old_fw,old_fp,old_w, old_p = split(old_q)
+    
+    # Hamiltonian = kinetic + potential energy
+    F = Identity(2) + grad(w)
+    e_kinetic     = 0.5*p**2
+    e_potential   = (mu/2)*(tr(F.T*F-Identity(2)) - 2*ln(det(F)))
+    H             = (e_kinetic + e_potential)*dx
+    
+    # damped Hamiltonian formulation with dual variables fw,fp
+    Res  = inner( (w-old_w)/dt , dfw )*dx - inner( 0.5*(fp+old_fp) , dfw )*dx
+    Res += inner( (p-old_p)/dt , dfp )*dx + inner( 0.5*(fw+old_fw) , dfp )*dx 
+    Res += viscosity * inner( grad(fp) , grad(dfp) )*dx
+    Res += inner(fw, dw )*dx + inner(fp, dp )*dx - derivative(H, q, dq)
+    
+    q.assign(old_q)
+    solve(Res == 0, q, [bc1,bc2])
+    
+    # Compute energies
+    E_kin = assemble(e_kinetic*dx)
+    E_pot = assemble(e_potential*dx)
+    return q,E_kin,E_pot
+```
+
