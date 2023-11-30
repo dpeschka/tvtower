@@ -39,7 +39,7 @@ $$
 a(\eta,\xi) - b(\xi,\partial_t q)=0,
 $$
 
-where $a(\eta,xi)=j(\eta,\xi)-k(\eta,\xi)$ consists of a skew-symmetric contribution $j$ that covers reversible (Hamiltonian) dynamics and a symmetric positive contribution $k$ that covers irreversible (Onsager) dynamics. We use 
+where $a(\eta,\xi)=j(\eta,\xi)-k(\eta,\xi)$ consists of a skew-symmetric contribution $j$ that covers reversible (Hamiltonian) dynamics and a symmetric positive contribution $k$ that covers irreversible (Onsager) dynamics. We use 
 
 $$
 j(\eta,\xi)=\int_\Omega \eta_p\cdot\xi_\chi - \xi_p\cdot\eta_\chi\hskip{2mm}\mathrm{d}x,
