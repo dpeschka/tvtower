@@ -28,7 +28,7 @@ $$
 using the deformation gradient $F=\nabla\chi$. For this we define extra variables $\mathbf{\eta}=(\eta_\chi,\eta_p)$ and identify forces via 
 
 $$
-b(\eta,v)=\langle \mathrm{D}\mathcal{H}(q),v\rangle
+b(\eta,v):\int_\Omega \eta\cdot v\,\mathrm{d}x\overset{!}{=}\langle \mathrm{D}\mathcal{H}(q),v\rangle
 $$
 
 where the Frechet derivative in FEniCS is conveniently obtained via `derivative(H,q,dq)`. In the actual implementation we use the displacement $w(x)$ instead of the deformation $\chi(x):=x+w(x)$. Then the elastodynamic problem is solved via
