@@ -23,7 +23,7 @@ It creates a plot of kinetic, potential and total energy as a function of time a
 Clone of the Fernsehturm mesh created by `tvmesh.py`.
 
 
-## What do you need to run this code?
+## What do you need to run this example (properly)?
 
 - Python
 - [FEniCS](https://fenicsproject.org) legacy 2019.1.0
