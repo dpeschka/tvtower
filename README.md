@@ -14,8 +14,10 @@ Author: Dirk Peschka
 ## What do you need to run this code?
 
 - Python
-- [FEniCS](https://fenicsproject.org) legacy 2019.1.0 with mshr
-- Matplotlib
+- [FEniCS](https://fenicsproject.org) legacy 2019.1.0
+- [mshr](https://bitbucket.org/fenics-project/mshr/src/master/) for mesh creation in FEniCS
+- Matplotlib for visualization in Python
+- [Paraview](https://www.paraview.org) for external visualization 
 
 ## Short mathematical explanation of problem
 
