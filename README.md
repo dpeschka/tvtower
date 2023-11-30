@@ -55,7 +55,7 @@ We discretize via P2 FEM for all function and a Crank-Nicolson scheme in time.
 
 ## Core part of discretization
 
-The central part of the damped Hamiltonian structure is contained in the `evolve` function, which assembles and solves the space and time discretization of a single time step. It decomposes the state `q` and test functions `dq` into their respective components corresponding to $\eta_w,\eta_p,w,p$ called `fw,fp,w,p`, respectively. Then, the Hamiltonian $\mathcal{H}$ is defined as described above with neo-Hookean elastic energy. Then, the nonlinear residual `Res(q)` is constructed and we solve `Res(q)==0` subject to natural and essential Dirichlet boundary conditions using Newton iterations. The function returns the new state and the kinetic and potential energy.
+The central part of the damped Hamiltonian structure is contained in the `evolve` function, which assembles and solves the space and time discretization of a single time step. It decomposes the state `q` and test functions `dq` into their respective components corresponding to $\eta_w,\eta_p,w,p$ called `fw,fp,w,p`, respectively. Then, the Hamiltonian $\mathcal{H}$ is defined as described above with neo-Hookean elastic energy. Then, the nonlinear residual `Res(q)` is constructed and we solve `Res(q)==0` subject to natural and essential Dirichlet boundary conditions using Newton iterations. Based on the solution of the previous time step `old_q`, fhe function returns the new state `q`and the kinetic and potential energy `E_kin` and `E_pot`.
 
 ```python
 # Solve single time step
